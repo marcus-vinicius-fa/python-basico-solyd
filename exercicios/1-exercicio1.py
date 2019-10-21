@@ -1,5 +1,5 @@
 '''
-EXERCÍCIO: Faça um formulário que pergunte
+EXERCÍCIO 1: Faça um formulário que pergunte
 o nome, cpf, endereço, idade, altura, e telefone
 e imprima isso em um relatório organizado
 '''

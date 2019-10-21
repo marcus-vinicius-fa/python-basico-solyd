@@ -95,9 +95,3 @@ resultado = 16 ** (1/2) # num1 elevado a meio = raiz quadrada de 16
 print ('Expoente -> 16 **(elevado a) 1/2 = raiz quadrada de 16 =', resultado, '\n') # = 100
 # existem outras formas de fazer raiz quadrada 
 # porém é usando uma biblioteca
-
-'''
-EXERCÍCIO: Faça um formulário que pergunte
-o nome, cpf, endereço, idade, altura, e telefone
-e imprima isso em um relatório organizado
-'''
