@@ -18,3 +18,8 @@ if idade >= '18' and peso >= '60' and altura >= '1.70':
   print('\nParabéns você está apto!')
 else:
   print('\nInfelizmente você não está apto.')
+
+# A comparação >=, <=.. Funciona com strings (TESTAR) é por conta do python3?
+
+## Ou converter os inputs para int e float e 
+# comparar no if com 'tipos numéricos' (int ou float)
