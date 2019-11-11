@@ -57,11 +57,11 @@ linguagens_de_programacao = ['Go', 'Python', 'JavaScript', 'Ruby', 'PHP', 'C++']
 print('Antes do insert:', linguagens_de_programacao)
 
 print('\n')
-linguagens_de_programacao.insert(3, 'Java') # Diferente do appendo o insert me permite adicionar um item num local (posição) específica
+linguagens_de_programacao.insert(3, 'Java') # Diferente do append o insert me permite adicionar um item num local (posição) específica
 print('Depois do insert:', linguagens_de_programacao)
 
 print('\n')
-linguagens_de_programacao[0] = 'Perl' # Mudificar um dado na lista
+linguagens_de_programacao[0] = 'Perl' # Modificar um dado na lista
 print(linguagens_de_programacao)
 
 print('\n')

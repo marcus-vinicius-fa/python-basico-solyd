@@ -26,7 +26,7 @@ for i in range(2, 101, 2):
   print(i)
 
 print('\n')
-for i in range(len(linguagens)): # Quado não se sabe o tamanho da lista!
+for i in range(len(linguagens)): # Quando não se sabe o tamanho da lista!
   print(linguagens[i])
 
 print('\n')
