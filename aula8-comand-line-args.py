@@ -1,4 +1,5 @@
 import sys # Biblioteca que "conversa" com SO
+from time import sleep
 
 # Muito útil para criar scripts
 argumentos = sys.argv
@@ -15,8 +16,14 @@ def sub(num1, num2):
 
 if argumentos[1] == 'soma': # argumentos é uma lista? O arg 0 é chamar o próprio programa
   resposta = soma(int(argumentos[2]), int(argumentos[3]))
-  print('Somando...\n' + str(resposta))
+  print('Somando...')
+  sleep(1)
+  print(str(resposta))
 
 elif argumentos[1] == 'sub':
   resposta = sub(int(argumentos[2]), int(argumentos[3]))
-  print('Subtraindo...\n' + str(resposta))
+  print('Subtraindo...')
+  sleep(1)
+  print(str(resposta))
+
+# não precisa de um else, pois não tenho que usar argumentos obrigatoriamente ao rodar um arquivo.py
