@@ -13,7 +13,7 @@
 
 ## PARA ESCREVER:
 
-arquivo = open('arquivo.txt', 'w') # abrir no modo 'a'
+arquivo = open('arquivo-aula10.txt', 'w') # abrir no modo 'a'
 print(type(arquivo))
 
 arquivo.write('Escrevendo no arquivo\n')
@@ -32,7 +32,7 @@ arquivo.close()
 
 ## PARA LER:
 
-arquivo = open('arquivo.txt', 'r')
+arquivo = open('arquivo-aula10.txt', 'r')
 
 print(arquivo.read())
 

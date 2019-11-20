@@ -14,6 +14,9 @@ class Cliente:
     self.cpf = cpf
     self.idade = idade
 
+  def __str__(self): ## ToString() do java!
+    return "Cliente: " + self.nome + "\nCPF: " + self.cpf + "\nidade: " + str(self.idade)
+
 #=========================================================
 
 class Conta:
@@ -46,11 +49,11 @@ class Conta:
 cliente = Cliente('Marcus', '123.456.789-12', 25)
 conta = Conta(cliente, 10, 100)
 
-print('nome do cliente: '+conta.cliente.nome)
-print('cpf do cliente: '+conta.cliente.cpf)
-print('idade do cliente: '+str(conta.cliente.idade))
+# print('nome do cliente: '+conta.cliente.nome)
+# print('cpf do cliente: '+conta.cliente.cpf)
+# print('idade do cliente: '+str(conta.cliente.idade))
 
-print('\n')
+print(cliente,'\n')
 
 print(conta.consultar())
 
