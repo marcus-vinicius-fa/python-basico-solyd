@@ -57,5 +57,5 @@ while continuar:
 # e crie um arquivo chamado 'arquivo-aula11.txt' e verifique 
 # as saídas no terminal.
 
-# Se preferir abra outro terminal e execute em paralelo o arquivo 'aula11-exec'
+# Se preferir abra outro terminal e execute em paralelo o arquivo 'aula11-exec' para
 # criar automaticamente o arquivo 'arquivo-aula11.txt' com um delay de 20 segundos
