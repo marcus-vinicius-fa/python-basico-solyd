@@ -9,23 +9,23 @@ Este repositório contém os códigos comentados, gerados durante o curso básic
 >Em construção...
 
 - **[Resumo do Curso](./markdown/resumo.md)**
-
-    - [x] Olá Mundo
-    - [x] Entrada e Saída
-    - [x] Variáveis
-    - [x] Operadores Matemáticos
-    - [x] Operadores Condicionais
-    - [x] Controladores de Fluxo
-    - [x] Strings
-    - [x] Listas
-    - [x] Estruturas de Laço
-    - [x] Dicionários
-    - [x] Tuplas
-    - [x] Sets-ou-Conjuntos
-    - [x] Importação e Uso de Bibliotecas
-    - [x] Funções
-    - [x] Argumentos para CLI
-    - [x] Trabalhando com Arquivos
-    - [x] Tratamento de erros
-    - [x] Requisições HTTP
-    - [x] Manipulação de JSON
+    <!-- TODO: Escrever anotações -->
+    - [ ] Olá Mundo
+    - [ ] Entrada e Saída
+    - [ ] Variáveis
+    - [ ] Operadores Matemáticos
+    - [ ] Operadores Condicionais
+    - [ ] Controladores de Fluxo
+    - [ ] Strings
+    - [ ] Listas
+    - [ ] Estruturas de Laço
+    - [ ] Dicionários
+    - [ ] Tuplas
+    - [ ] Sets ou Conjuntos
+    - [ ] Importação e Uso de Bibliotecas
+    - [ ] Funções
+    - [ ] Argumentos para CLI
+    - [ ] Trabalhando com Arquivos
+    - [ ] Tratamento de erros
+    - [ ] Requisições HTTP
+    - [ ] Manipulação de JSON
