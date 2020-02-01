@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 '''
 EXERCÍCIO 1: Faça um formulário que pergunte
 o nome, cpf, endereço, idade, altura, e telefone
@@ -14,4 +17,5 @@ altura = input('Digite sua altura [use o formato 1.70]: ')
 telefone = input('Digite o seu telefone [Insira o DDD + 9 no início]: ')
 
 print('\nDADOS CADASTRADOS CO SUCESSO!\nCONFIRA SEUS DADOS...')
-print('\nSeu nome é', nome, ', com cpf de número:', cpf, '\nEndereço:', endereco,'\nIdade:', idade, 'anos\nAltura:', altura, '\nTelefone para contato:', telefone)
+print('\nSeu nome é', nome, ', com cpf de número:', cpf, '\nEndereço:', endereco,
+      '\nIdade:', idade, 'anos\nAltura:', altura, '\nTelefone para contato:', telefone)

@@ -1,4 +1,7 @@
-from carro import Carro # importando a class
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+from carro import Carro  # importando a class
 from veiculo import Veiculo
 
 # instância do objeto carro
@@ -29,4 +32,3 @@ caminhao.abastecer(40)
 print('tanque atual:', caminhao.tanque)
 caminhao.abastecer(10)
 print('tanque atual:', caminhao.tanque)
-

@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 # Bibliotecas internas do Python
 # import sys
 # import time
@@ -40,22 +43,22 @@ import requests
 # Beautiful Soap 4 - bs4: Biblioteca para trabalhar com páginas html
 # PutsReq
 
-header = {'User-agent': 'Linux Mint 20'} # Dicionário # Mesma estrutura de um JSON
+# Dicionário # Mesma estrutura de um JSON
+header = {'User-agent': 'Linux Mint 20'}
 cookies = {'Ultima-visita': '23-11-2019'}
 data = {'username': 'Marcus Vinicius',
         'password': '12345678'}
 
 
-text = None # Nenhum (vazio)
+text = None  # Nenhum (vazio)
 try:
-  request = requests.post('https://putsreq.com/DAbKjyyoQRRUZW0Ccpm8',
-  headers=header,
-  cookies=cookies,
-  data=data) # headers é um parametro de requests
-  
+    request = requests.post('https://putsreq.com/DAbKjyyoQRRUZW0Ccpm8',
+                            headers=header,
+                            cookies=cookies,
+                            data=data)  # headers é um parametro de requests
 
-  text = request.text
+    text = request.text
 except Exception as error:
-  print('Erro: ',error)
+    print('Erro: ', error)
 
 print(text)

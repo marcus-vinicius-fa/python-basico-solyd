@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 '''
 EXERCíCIO: Faça um programa que leia a quantidade de 
 pessoas que serão convidadas para uma festa. 
@@ -14,7 +17,7 @@ lista_convidados = []
 
 print('\nDigite o nome de cada convidado\n')
 for i in range(quant_pessoas):
-  lista_convidados.append('- ' + input('Nome do convidado: '))
+    lista_convidados.append('- ' + input('Nome do convidado: '))
 
 print('Todos os convidados estão na lista agora!')
 
@@ -24,5 +27,5 @@ print('\n')
 i = 0
 
 while i < len(lista_convidados):
-  print(lista_convidados[i])
-  i += 1
+    print(lista_convidados[i])
+    i += 1
