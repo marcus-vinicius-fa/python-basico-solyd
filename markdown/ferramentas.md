@@ -6,13 +6,13 @@
 
 ## Sumário
 
-1. [Instalação Python](##instalação-python)
-1. [Cmder](##cmder)
-1. [VSCode](##vscode)
-1. [Fira Code](##fira-code)
-1. [Lint ](##lint) _(em construção)_
-1. [Cmd básico](##cmd-básico)
-1. [Bash básico](##bash-básico)
+1. [Instalação Python](#instalação-python)
+1. [Cmder](#cmder)
+1. [VSCode](#vscode)
+1. [Fira Code](#fira-code)
+1. [Lint ](#lint) _(em construção)_
+1. [Cmd básico](#cmd-básico)
+1. [Bash básico](#bash-básico)
 
 ## Instalação Python
 
