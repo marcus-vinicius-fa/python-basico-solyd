@@ -1,64 +1,35 @@
-[home](../README.md) < resumo
+[home](../README.md) | [resumo](./resumo.md)
 
-# Python
+# Ferramentas e Produtividade
 
->O básico da linguagem e algumas coisas mais...
-
-<br/>
-
-*Uso no Windows
+>Configurando um ambiente mais agradável no Windows
 
 ## Sumário
 
-- Ferramentas e produtividade
-
-    - [Instalação Python](##instalação-python)
-    - [Cmder](##cmder)
-    - [VSCode](##vscode)
-    - [Fira Code](##fira-code)
-    - [Lint ](##lint)
-    - [Cmd básico](##cmd-básico)
-    - [Bash básico](##bash-básico)
-
-- Python
-    - [Olá Mundo](##olá-mundo)
-    - [Entrada e Saída](##entrada-e-saída)
-    - [Variáveis](##variáveis)
-    - [Operadores Matemáticos](##operadores-matemáticos)
-    - [Operadores Condicionais](##operadores-condicionais)
-    - [Controladores de Fluxo](##controladores-de-fluxo)
-    - [Strings](##strings)
-    - [Listas](##listas)
-    - [Estruturas de Laço](##estruturas-de-laço)
-    - [Dicionários](##dicionários)
-    - [Tuplas](##tuplas)
-    - [Sets ou Conjuntos](##sets-ou-conjuntos)
-    - [Importação e Uso de Bibliotecas](##importação-e-uso-de-bibliotecas)
-    - [Funções](##funções)
-    - [Argumentos para CLI](##argumentos-para-cli)
-    - [Trabalhando com Arquivos](##trabalhando-com-arquivos)
-    - [Tratamento de erros](##tratamento-de-erros)
-    - [Requisições HTTP](##requisições-http)
-    - [Manipulação de JSON](##manipulação-de-json)
-
----
+1. [Instalação Python](##instalação-python)
+1. [Cmder](##cmder)
+1. [VSCode](##vscode)
+1. [Fira Code](##fira-code)
+1. [Lint ](##lint) _(em construção)_
+1. [Cmd básico](##cmd-básico)
+1. [Bash básico](##bash-básico)
 
 ## Instalação Python
 
-Para instalar o Python a melhor maneira é fazendo uso do gerenciador de pacotes [Chocolatey](https://chocolatey.org/), é quase um _apt-get_ em sistemas unix baseados no Ubuntu. Tenho um repositório com pacotes que são importantes para mim como usuário comum e também desenvolvedor. Caso queira conhecer está [aqui](https://github.com/marcus-vinicius-fa/meu-chocolatey). Neste repositório eu também ensino como instalar o Chocolatey além de falar sobre alguns comandos (os mais utilizados).
+Para instalar o Python a melhor maneira é fazendo uso do gerenciador de pacotes [Chocolatey](https://chocolatey.org/), é quase um _apt-get_ em sistemas unix baseados no Ubuntu. Tenho um repositório com pacotes que são importantes para mim como usuário comum e também desenvolvedor, caso queira conhecer está [aqui](https://github.com/marcus-vinicius-fa/meu-chocolatey). Neste repositório eu também ensino como instalar o Chocolatey além de falar sobre alguns comandos (os mais utilizados).
 
-Com o Chocolatey instalado, abra um prompt(cmd)/powershel (linha de comando windows) como adiministrador e digite o seguinte comando, pressionando enter em seguida.
+Com o Chocolatey instalado, abra um prompt(cmd)/powershel (linha de comando windows) como adiministrador e digite o seguinte comando, pressionando _enter_ em seguida.
 
 ~~~powershell
 # instalando o python na versao mais recente
-choco install -y python
+> choco install -y python
 ~~~
 
 Aguarde o processo de download e instalação e ao finalizar verifique a instalação com o comando.
 
 ~~~powershell
-# verificando a versao
-python --version
+# verificando a instalacao
+> python --version
 ~~~
 
 E ai, deu certo?
@@ -75,7 +46,7 @@ Vamos instala-lo a partir do gerenciador Chocolatey também
 
 ~~~powershell
 # instalando o cmder na versao mais recente
-choco install -y cmder
+> choco install -y cmder
 ~~~
 
 Após a instalação use o atalho **"tecla win + q"** e digite: **"cmder"**. Clique com o botão direito no programa e selecione a opção: **"Fixar na barra de tarefas"**. E pronto, você já têm uma linha de comando nova e melhorada. Mexa no tamanho da fonte caso esteja pequena demais e mude para iniciar por padrão com o cmd caso esteja abrindo com o powershell, essas configuração você encontra clicando no ícone presente no canto direito inferior e depois em **"Settings"**.
@@ -92,7 +63,7 @@ Podemos instalar o VSCode da mesma forma que os programas anteriores, com o Choc
 
 ~~~powershell
 # instalando o vscode na versao mais recente
-choco install -y vscode
+> choco install -y vscode
 ~~~
 
 ### Conhecendo o Editor
@@ -141,6 +112,8 @@ Clique no ícone de engrenagem no canto inferior esquerdo e selecione **"Configu
 
 - **"Ctrl + shift + O":** Para procurar elementos em um arquivo.
 
+- **"Ctrl + ; ":** Comenta um linha inteira
+
 ### Extensões
 
 #### Para trabalhar com Python
@@ -187,6 +160,21 @@ Cole essa estrutura no seu arquivo **settings.js**
 }
 ~~~
 
+Agora use o comando **"Ctrl + ; "** dentro de um arquivo para comentar uma linha inteira vazia e escreva dentro do comentário uma das três linhas abaixo (teste uma de cada vez)
+
+~~~powershell
+# para marcar tarefas
+# TODO: texto...
+
+# para marcar urgencia para conserto
+# FIXME: texto...
+
+# para marcar um bug
+# BUG: texto...
+~~~
+
+Na barra de ativiade clique no novo ícone do TodoTree para ver todos os arquivos marcados, assim você não se perde mais.
+
 - **Bracket Pair Colorizer 2:** Extensão para colorir essas "( { [ ] } )" estruturas em níveis ajuda muito a visualizar o seu código.
 
 - **Editor Config:** Essa extensão serve para padronizar o seu código caso esteja codificando em equipe ou caso utilize dualboot na sua máquina.
@@ -207,22 +195,6 @@ insert_final_newline = true
 
 Este arquivo é muito simples e para entender melhor o que significa cada linha de configuração veja no [site oficial do projeto](https://editorconfig.org/#overview).
 
-### Iniciando com Python
-
-Para começar a trabalhar Python no VSCode siga os passos a seguir
-
-1. Com o Cmder/cmd/powershell do aberto navegue até o diretório onde deseja guardar os seus códigos.
-
-~~~powershell
-# cd + "diretorio\" entra no diretorio
-# cd .. volta um diretorio
-cd "nome-do-diretorio\"
-~~~
-
-*Use a tecla **"tab"** para autocompletar.
-
-
-
 ---
 
 ## Fira Code
@@ -233,7 +205,7 @@ Vamos instala-la também com o Chocolatey
 
 ~~~powershell
 # instalando a fonte fira code na versao mais recente
-choco install -y firacode
+> choco install -y firacode
 ~~~
 
 Instalação concluída vamos dizer para o VSCode que queremos fazer uso dessa fonte e que desejamos habilitar a ligação de caracteres a partir de agora. Com o VSCode aberto pressione as teclas de atalho **"ctrl + shift + p"** e digite: **"settings.json"**, copie as linhas abaixo, dentro dos colchetes, para o seu arquivo **settings.json**.
@@ -252,131 +224,177 @@ Clique no ícone de engrenagem no canto inferior esquerdo e selecione **"Configu
 
 ---
 
-## Lint
+<!-- ## Lint
 
+TODO: fazer essa parte
 
----
+Lint é um programa que checa o código a procura de erros de sintaxe ou de estilo.
+
+Para "Lintar" o código Python você pode fazer uso da ferramenta [pylint](https://www.pylint.org/) e
+
+~~~js
+{
+    "python.pythonPath":"C:\\Python38\\python",
+    "python.linting.enabled": true,
+    "python.linting.lintOnSave": true,
+    // "python.linting.pep8Enable": true,
+    "python.formatting.provider": "autopep8",
+    "[python]": {
+        "editor.tabSize": 4,
+        "editor.detectIndentation": true,
+        "editor.formatOnSave" : true,
+        "editor.formatOnPaste": true,
+    }
+}
+~~~ -->
 
 ## Cmd básico
 
+Com o uso do [Cmder](##cmder) acho mais interessante aprender os comandos unix. Abaixo seguem alguns comandos principais do windows para usos mais básicos.
+
+[dir](https://pt.wikibooks.org/wiki/MS-DOS/Lista_de_comandos#DIR): lista arquivos e pastas
+
+**cd**: entra em uma pasta
+
+[md](https://pt.wikibooks.org/wiki/MS-DOS/Lista_de_comandos#MKDIR): cria uma pasta
+
+[copy](https://pt.wikibooks.org/wiki/MS-DOS/Lista_de_comandos#COPY): copia uma arquivo ou pasta
+
+[move](https://pt.wikibooks.org/wiki/MS-DOS/Lista_de_comandos#MOVE): move um arquivo ou pasta
+
+[deltree](https://pt.wikibooks.org/wiki/MS-DOS/Lista_de_comandos#DELTREE): deleta pasta e subpastas
+
+**del**: deleta um arquivo
+
+[ren](https://pt.wikibooks.org/wiki/MS-DOS/Lista_de_comandos#RENAME): renomeia arquivos
 
 ---
 
 ## Bash básico
 
-- [pwd](http://guialinux.uniriotec.br/pwd/):
+*Esses comandos são interpretados pelo [Cmder](##cmder).
 
-- [cd](http://guialinux.uniriotec.br/cd/):
+A sintaxe dos comandos geralmente é essa:
 
-- which:
+**comando [parametro]... []...**
 
-- [touch](http://guialinux.uniriotec.br/touch/):
+Digite um dos comandos abaixo seguido de **--help** (um parâmetro) para descobrir as possibilidades do comando inserido.
 
-- [mkdir](http://guialinux.uniriotec.br/mkdir/):
+<br/>
 
-- nano:
+**[PWD](http://guialinux.uniriotec.br/pwd/)**: Comando para saber qual é o diretório corrente/atual.
 
-- [rm](http://guialinux.uniriotec.br/rm/):
+~~~bash
+$ pwd
 
-- [cp](http://guialinux.uniriotec.br/cp/):
+> C:/Users/usuario
+~~~
 
-- [mv](http://guialinux.uniriotec.br/mv/):
+**[CD](http://guialinux.uniriotec.br/cd/)**: Comando para entrar e sair de diretórios.
 
-- exit:
+~~~bash
+# entra no diretorio
+$ cd "nome-do-diretorio/"
 
----
+# volta um diretoria na cadeia
+$ cd ..
 
-## Olá Mundo
+# volta dois diretorios na cadeia
+$ cd ../..
+~~~
 
+**WHICH**: Comando para verificar o local de instalação de um binário (executável de um programa).
 
----
+~~~bash
+# onde o python esta instalado
+$ which python
 
-## Entrada e Saída
+> /C:/Python38/python
+~~~
 
+**[TOUCH](http://guialinux.uniriotec.br/touch/)**: Comando para criar um novo arquivo vazio.
 
----
+~~~bash
+# cria um arquivo chamado teste com a extensao .txt
+$ touch "teste.txt"
 
-## Variáveis
+# use o "ls" para verificar a criacao do arquivo
+~~~
 
+**[LS](http://guialinux.uniriotec.br/ls/)**: Comando para listar os arquivos de um diretório.
 
----
+~~~bash
+# listar arquivos
+$ ls
 
-## Operadores Matemáticos
+# listar todos os arquivos inclusive os ocultos
+$ ls -a
+~~~
 
+**[MKDIR](http://guialinux.uniriotec.br/mkdir/)**: Comando para criar pastas/diretorios.
 
----
+~~~bash
+# cria um diretorio chamado nome-da-pasta
+$ mkdir "nome-do-diretorio"
 
-## Operadores Condicionais
+# verifique o novo diretorio com o comando "ls"
+~~~
 
+**NANO**: Comando para abrir um editor de texto dentro da linha de comando.
 
----
+~~~bash
+# se o arquivo nao existem ele sera aberto mesmo assim
+# caso deseje salva-lo apos a escrita o arquivo sera criado
+$ nano "nome-do-arquivo.txt"
+~~~
 
-## Controladores de Fluxo
+**[RM](http://guialinux.uniriotec.br/rm/)**: Comando para remover um arquivo ou diretorio (caso precedido de parametro)
 
+~~~bash
+# exclui o arquivo
+$ rm nome-do-arquivo.txt
 
----
+# -r para remover de forma recursiva
+# -f para forcar a remorcao
+# deleta o diretorio e subdiretorios
+$ rm -rf "nome-do-diretorio/"
+~~~
 
-## Strings
+**[CP](http://guialinux.uniriotec.br/cp/)**: Comando para copiar arquivos ou diretórios.
 
+~~~bash
+# copia arquivo para a pasta
+cp "arquivo.txt" "/nome-do-dir/nome-do-dir"
+~~~
 
----
+**[MV](http://guialinux.uniriotec.br/mv/)**: Comando para mover ou renomear arquivos ou diretórios.
 
-## Listas
+~~~bash
+# move arquivo para a pasta
+mv arquivo.txt "/nome-do-dir/nome-do-dir"
 
+# renomeia arquivo
+mv "arquivo.txt" "novo-arquivo.txt"
+~~~
 
----
+**"Ctrl + c**": Comando para cancelar uma ação corrente.
 
-## Estruturas de Laço
+**"Ctrl + l"**: "Sobe" a linha de comando.
 
+**CLEAR**: Limpa a linha de comando.
 
----
+~~~bash
+$ clear
+~~~
 
-## Dicionários
+**RESET**: Reinicia a linha de comando.
 
+~~~bash
+$ reset
+~~~
 
----
+**EXIT**: Comando para sair da linha de comando.
 
-## Tuplas
-
-
----
-
-## Sets ou Conjuntos
-
-
----
-
-## Importação e Uso de Bibliotecas
-
-
----
-
-## Funções
-
-
----
-
-## Argumentos para CLI
-
-
----
-
-## Trabalhando com Arquivos
-
-
----
-
-## Tratamento de erros
-
-
----
-
-## Requisições HTTP
-
-
----
-
-## Manipulação de JSON
-
-
----
+~~~bash
+$ exit
+~~~

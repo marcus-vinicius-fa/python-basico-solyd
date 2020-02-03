@@ -8,20 +8,26 @@ Este repositório contém os códigos comentados, gerados durante o curso básic
 - [_Projetos_]()
 >Em construção...
 
-- **[Anotações](./markdown/anotacoes.md)**
-    <!-- TODO: Escrever anotações -->
+- **[Ferramentas e Produtividade](./markdown/ferramentas.md)**
+
     - [x] Instalação Python
     - [x] Cmder
     - [x] VSCode
     - [x] Fira Code
-    - [ ] Lint
-    - [ ] Cmd básico
-    - [ ] Bash básico
-    - [ ] Olá Mundo
-    - [ ] Entrada e Saída
-    - [ ] Variáveis
-    - [ ] Operadores Matemáticos
-    - [ ] Operadores Condicionais
+    - [ ] Lint _(em construção)_
+    - [x] Cmd básico
+    - [x] Bash básico
+
+- **[Resumo](./markdown/resumo.md)**
+
+    - [x] Iniciando no VSCode
+    - [x] Olá Mundo
+    - [x] Comentários
+    - [x] Entrada e Saída
+    - [x] Tipos
+    - [x] Variáveis
+    - [x] Operadores Matemáticos
+    - [x] Operadores Condicionais
     - [ ] Controladores de Fluxo
     - [ ] Strings
     - [ ] Listas

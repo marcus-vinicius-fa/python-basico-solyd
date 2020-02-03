@@ -35,6 +35,8 @@ print(type(idade))  # tipo da variável nome = int -> 'Inteiro'
 altura = 1.85
 print(type(altura))  # tipo da variável nome = float = '.'flutuante
 
+print(type(True))
+
 # /
 # str(string)
 # int
