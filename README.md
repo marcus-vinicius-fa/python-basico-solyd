@@ -8,8 +8,15 @@ Este repositório contém os códigos comentados, gerados durante o curso básic
 - [_Projetos_]()
 >Em construção...
 
-- **[Resumo do Curso](./markdown/resumo.md)**
+- **[Anotações](./markdown/anotacoes.md)**
     <!-- TODO: Escrever anotações -->
+    - [x] Instalação Python
+    - [x] Cmder
+    - [x] VSCode
+    - [x] Fira Code
+    - [ ] Lint
+    - [ ] Cmd básico
+    - [ ] Bash básico
     - [ ] Olá Mundo
     - [ ] Entrada e Saída
     - [ ] Variáveis
